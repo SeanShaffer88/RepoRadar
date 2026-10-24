@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reporadar"
+version = "0.1.0"
+description = "Live status snapshot across many GitHub repos, plus SyncGuard pre-publish sync checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Sean Shaffer" },
+]
+keywords = ["github", "git", "sync", "status", "cli"]
+dependencies = []
+
+[project.scripts]
+reporadar = "reporadar:main"
+
+[tool.setuptools]
+py-modules = ["reporadar"]
